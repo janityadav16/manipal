@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
         body{
             color: red;
         } 
         @media screen and (max-width:300px) {
+            /* instead of screen if you want media querry to apply to all you can use all */
             body{
                 color: green;
+            }
+            p{
+                display: none;
             }
         }
 
