@@ -59,3 +59,28 @@
         <h2 id="result"></h2>
     </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function divideNumbers() {
+                var a = document.getElementById("num1").value;
+                var b = document.getElementById("num2").value;
+                var c = parseFloat(a) / parseFloat(b);
+
+                if (isNaN(c) || !isFinite(c)) {
+                    document.getElementById("result").innerHTML = "Cannot divide by zero or invalid input.";
+                } else {
+                    document.getElementById("result").innerHTML = "division = " + c;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        First digit: <input type="text" id="num1"><br>
+        Second digit: <input type="text" id="num2"><br>
+        <input type="button" value="Division" onclick="divideNumbers()">
+        <h2 id="result"></h2>
+    </body>
+</html>
