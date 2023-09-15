@@ -7,14 +7,14 @@
               var b=document.getElementById("num2").value;
               var c=parseInt(a)+parseInt(b);
               document.write("addition"+ c)
+              document.getElementById("result").innerHTML="addition =" +c;
             }
         </script>
     </head>
     <body>
-        <label>input your name:</label>
-        <input type="text" id="num1">
-        <label>input your name:</label>
-        <input type="text" id="num2">
-        <input type="button" value="addition" onclick="add()">
+        first digit<input type="text" id="num1"><br>
+        second digit<input type="text" id="num2"><br>
+        <input type="button" value="addition" onclick="addnumbers()">
+        <h2 id="result"></h2>
     </body>
 </html>
