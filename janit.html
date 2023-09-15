@@ -23,7 +23,13 @@
 <html>
     <head>
         <script>
-           
+           function subtractNumbers() {
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    var c = parseInt(a) - parseInt(b);
+    document.getElementById("result").innerHTML = "subtraction = " + c;
+}
+
         </script>
     </head>
     <body>
