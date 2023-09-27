@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container1{
+              border: 2px solid black;
+              box-shadow: 5px 5px 30px 5px black; 
+              width: 50%;
+              border-radius: 12px;
+              margin: 10px;
+              align-items: center;
+              text-align: center;
+            }
+
+            .container2{
+              border: 2px solid black;
+               box-shadow: 5px 5px 30px 5px black;
+              width: 50%;
+              border-radius: 12px;
+              margin: 10px;
+              text-align: center;
+              align-items: center;
+            }
+
+            .button{
+                color: black;
+                background-color: blue;
+                border-radius: 9px;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .button:hover{
+                color: white;
+                background-color: crimson;
+                box-shadow: 5px 5px 30px 5px black;
+            }
+
+            @media screen and (max-width:480px) {
+                .container1{
+                    width: 100%;
+                   font-size: 30px;
+                    font-family: sans-serif;
+                }
+                img{
+                    display: none;
+                }
+
+                .container2{
+                    width: 100%;
+                    color: red;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                img{
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .container1{
+                    width: 100%;
+                    color: blue;
+                    font-size: 15px;
+                }
+                img{
+                    display: none;
+                }
+
+                .container2{
+                    width: 100%;
+                    color: rebeccapurple;
+                    font-size: 20px;
+                }
+                img{
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="container1">
+                <h3>Designation 1</h3>
+                <img src="/Users/janit/Desktop/insta.png" width="100px" height="100px">
+                <p>this is a inta link to take you on instagram page</p>
+                <button class="button">share <link rel="stylesheet" href="/Users/janit/Desktop/manipal/form.html"></button>
+            </div>
+        </section><br>
+        <section>
+            <div class="container2">
+                <h3>Designation 2</h3>
+                <img src="/Users/janit/Desktop/apple.png" width="100px" height="100px">
+                <p>this is a apple link to take you to apple store</p>
+            </div>
+        </section>
+    </body>
+</html>
