@@ -212,25 +212,49 @@ body {
           opacity: 0;
         }
       }
-
+       .body{
+        background-color: black;
+       }
       .jump-fade {
-        animation: jumpAndFade 10s ease-out forwards;
+        animation: jumpAndFade 5s ease-out infinite;
         align-items: center;
         text-align: center;
+        background-color: black;
+        color: red;
+        font-size: 100px;
       }
+     
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+.info {
+  animation: slideLeftToRight 3s linear infinite; 
+  width: 10%;
+}
+
     </style>
   </head>
   <body>
     <div class="jump-fade">
-      <span>j</span>
-      <span>u</span>
-      <span>m</span>
-      <span>p</span>
-      <span>&</span>
-      <span>f</span>
-      <span>a</span>
-      <span>d</span>
-      <span>e</span>
+      <span>JANIT YADAV</span>
     </div>
+    <section class="info">
+    <div>
+     <h1>personal Info</h1>
+     <p>Here is my basic personal info regarding my self</p>
+     <p>AGE: 17</p>    
+     <p>HOBBY: Travelling,</p>
+     <p></p>
+     <p></p>
+     <p></p>
+    </div>
+  </section>
   </body>
 </html>
