@@ -196,25 +196,39 @@ body {
 <!DOCTYPE html>
 <html>
   <head>
-    <title>sample animation</title>
+    <title>Jump and Fade</title>
     <style>
-      
+      @keyframes jumpAndFade {
+        0% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        50% {
+          transform: translateY(-50px);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+      }
+
+      .jump-fade {
+        animation: jumpAndFade 10s ease-out forwards;
+      }
     </style>
   </head>
   <body>
-    <div class="disappear">
-      <spam>D</spam>
-      <spam>I</spam>
-      <spam>S</spam>
-      <spam>A</spam>
-      <spam>P</spam>
-      <spam>P</spam>
-      <spam>E</spam>
-      <spam>A</spam>
-      <spam>R</spam>
-      <spam>I</spam>
-      <spam>N</spam>
-      <spam>G</spam>
+    <div class="jump-fade">
+      <span>j</span>
+      <span>u</span>
+      <span>m</span>
+      <span>p</span>
+      <span>&</span>
+      <span>f</span>
+      <span>a</span>
+      <span>d</span>
+      <span>e</span>
     </div>
   </body>
 </html>
